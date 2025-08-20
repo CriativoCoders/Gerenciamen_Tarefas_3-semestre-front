@@ -1,0 +1,21 @@
+@use './variaveis.scss' as *;
+
+.barra {
+    width: 100vw;
+    height: 60px;
+    background-color: $cor-destaque;
+
+    ul {
+        font-size: $font-size;
+        //display: flex;
+        //flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    li {
+        list-style: none;
+        justify-content: center;
+        display: flex;
+    }
+}
