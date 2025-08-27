@@ -1,17 +1,18 @@
 
-import { BarraNavegacao } from './components/BarraNavegacao'
-import { Cabecalho } from './components/Cabecalho'
-import './Style/main.scss'
+// import { BarraNavegacao } from './Componentes/BarraNavegacao'
+// import { Cabecalho } from './Componentes/Cabecalho'
+// import { CadTarefa } from './Paginas/CadTarefa';
+// import './Style/main.scss'
 
+
+import { Rotas } from './Rotas/Rotas';
+import { BrowserRouter } from 'react-router-dom';
 function App() {
 
   return (
-    // barra fantasma <></>  foi tenho mais de um elemento sendo renderizado
-    <>
-      <BarraNavegacao />
-      <Cabecalho />
-    </>
+    <BrowserRouter>
+      <Rotas />
+    </BrowserRouter>
   )
 }
-
-export default App
+export default App;
